@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="it"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Che tipo di user sei?&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&amp;display=swap" rel="stylesheet"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Space Grotesk', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #ff007f, #00d2ff);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #111;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 48px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>max-width: 560px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: fadeIn 1s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 2.2rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 600;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(90deg, #ff007f, #00d2ff);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-background-clip: text;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>-webkit-text-fill-color: transparent;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.question {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 32px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.option {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #fffae6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #ff007f;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 16px 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 10px 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: transform 0.2s, background 0.3s, box-shadow 0.3s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.option:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ff72b6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(1.03);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.hidden {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.result {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 32px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>animation: fadeIn 0.5s ease-in-out;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.result h2 {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1.6rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #00d2ff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.result p {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: #444;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta-buttons {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 32px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta-buttons a {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 20px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ff007f;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>font-weight: 500;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transition: background 0.3s, transform 0.2s;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.cta-buttons a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>background: #ff72b6;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>transform: scale(1.05);</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Mobile responsive */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>@media screen and (max-width: 768px) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 24px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 1.8rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>.option {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 12px 18px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 1rem;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>@keyframes fadeIn {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>from { opacity: 0; transform: translateY(10px); }</p>
+<p class="p1"><span class="Apple-converted-space">      </span>to { opacity: 1; transform: translateY(0); }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;audio id="clickSound" src="https://www.soundjay.com/button/beep-07.wav" preload="auto"&gt;&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;audio id="successSound" src="https://www.soundjay.com/button/beep-09.wav" preload="auto"&gt;&lt;/audio&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Che tipo di user sei?&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question" id="q1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;1. Come interagisci con un’interfaccia?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="option" onclick="nextQuestion('sprint')"&gt;Clicco subito appena vedo qualcosa interessante&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="option" onclick="nextQuestion('zen')"&gt;Prima esploro tutto, poi clicco&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="option" onclick="nextQuestion('critic')"&gt;Se noto errori di design, mi distraggo&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question hidden" id="q2"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;2. Cosa noti per primo su un sito?&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="option" onclick="nextQuestion('sprint')"&gt;I colori e le animazioni&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="option" onclick="nextQuestion('zen')"&gt;La struttura e i testi&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="option" onclick="nextQuestion('critic')"&gt;Se il layout è coerente e ben bilanciato&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="question hidden" id="q3"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p&gt;3. Se un'app non funziona al primo tentativo...&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="option" onclick="showResult('sprint')"&gt;Cambio app&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="option" onclick="showResult('zen')"&gt;Provo a capire cosa non va&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="option" onclick="showResult('critic')"&gt;Penso che l’UX designer dovrebbe fare meglio&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="result hidden" id="result"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2 id="resultTitle"&gt;&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;p id="resultText"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="cta-buttons"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="https://www.linkedin.com/in/tuo-profilo" target="_blank"&gt;Collegati su LinkedIn&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="/CV_nome_cognome.pdf" download&gt;Scarica il mio CV&lt;/a&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>let step = 1;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>const score = { sprint: 0, zen: 0, critic: 0 };</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function playSound(id) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(id).play();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function nextQuestion(type) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>playSound('clickSound');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>score[type]++;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(`q${step}`).classList.add('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>step++;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(`q${step}`).classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function showResult(type) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>playSound('successSound');</p>
+<p class="p1"><span class="Apple-converted-space">      </span>score[type]++;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById(`q${step}`).classList.add('hidden');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const max = Object.entries(score).sort((a, b) =&gt; b[1] - a[1])[0][0];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('result').classList.remove('hidden');</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>let title = '', text = '';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>if (max === 'sprint') {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title = 'Lo Sprintoso ⚡';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text = 'Parti a razzo, test after test. Ami la velocità. Lavorare con te è come essere su una zipline: diretto, senza fronzoli.';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else if (max === 'zen') {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title = "L'Analitico Zen 🧘‍♂️";</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text = 'Leggi, rifletti, clicchi solo se merita. Paziente, consapevole, ma anche esigente. Le interfacce devono guadagnarsi la tua fiducia.';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>title = 'Il Pixel Critic 👁️';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text = 'Attenzione maniacale ai dettagli. Scrolli solo se il font ti ispira. Se noti un padding sbagliato, ti si stringe il cuore.';</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('resultTitle').innerText = title;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('resultText').innerText = text;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
